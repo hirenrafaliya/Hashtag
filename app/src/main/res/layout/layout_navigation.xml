@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardNavigation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/colorSecondaryWhite"
+    android:outlineAmbientShadowColor="#00553344"
+    android:outlineSpotShadowColor="#00335533">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/layoutHashtag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_navigation"
+            android:gravity="center"
+            android:padding="@dimen/_4sdp">
+
+            <ImageView
+                android:id="@+id/imgHashtag"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_hashtag" />
+
+            <TextView
+                android:id="@+id/txtHashtag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:layout_toRightOf="@+id/imgHashtag"
+                android:fontFamily="@font/sf_medium"
+                android:text="Hashtag"
+                android:textColor="@color/colorPrimaryBlack" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutCaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/_4sdp">
+
+            <ImageView
+                android:id="@+id/imgCaption"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_caption" />
+
+            <TextView
+                android:id="@+id/txtCaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:layout_toRightOf="@+id/imgCaption"
+                android:fontFamily="@font/sf_medium"
+                android:text="Caption"
+                android:textColor="@color/colorPrimaryBlack" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

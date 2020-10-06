@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Hash</string>
+
+    <!--    No AD Unit IDs-->
+    <!--    <string name="test_device_id">30DC2F0F02741CB09C5E530F1D899943</string>-->
+    <!--    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>-->
+    <!--    <string name="banner_ad">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial_ad">ca-app-pub-3940256099942544/103317371</string>-->
+    <!--    <string name="rewarded_ad">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="native_ad">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="banner_ad_fan">IMG_16_9_APP_INSTALL#1356358057896211_135775075775694</string>-->
+
+
+    <!--    Test AD Unit IDs-->
+<!--    <string name="test_device_id">30DC2F0F02741CB09C5E530F1D899943</string>-->
+<!--    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>-->
+<!--    <string name="banner_ad">ca-app-pub-3940256099942544/6300978111</string>-->
+<!--    <string name="interstitial_ad">ca-app-pub-3940256099942544/1033173712</string>-->
+<!--    <string name="rewarded_ad">ca-app-pub-3940256099942544/5224354917</string>-->
+<!--    <string name="native_ad">ca-app-pub-3940256099942544/2247696110</string>-->
+<!--    <string name="banner_ad_fan">IMG_16_9_APP_INSTALL#1356358057896211_1357750757756941</string>-->
+
+    <!--    AD Unit IDs-->
+        <string name="test_device_id">30DC2F0F02741CB09C5E530F1D899943</string>
+        <string name="app_id">ca-app-pub-6803080748225134~9599976747</string>
+        <string name="interstitial_ad">ca-app-pub-6803080748225134/3149052802</string>
+        <string name="banner_ad">ca-app-pub-6803080748225134/9100744297</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--        <string name="banner_ad_fan">1356358057896211_1357750757756941</string>-->
+</resources>

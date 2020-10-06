@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    tools:context=".Fragment.TextFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="@dimen/_8sdp"
+        android:id="@+id/layoutParentText"
+        >
+
+    <EditText
+        android:id="@+id/edtCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:fontFamily="@font/sf_medium"
+        android:hint="Enter your text"
+        android:textSize="@dimen/_14sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtCaption"
+            android:layout_margin="@dimen/_4sdp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/layoutCollection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_light_ripple"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="@dimen/_6sdp">
+
+                <ImageView
+                    android:id="@+id/imgCollection"
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:alpha="0.8"
+                    android:src="@drawable/ic_format_textdirection_l_to_r_black_24dp" />
+
+                <TextView
+                    android:id="@+id/txtCollection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:layout_toRightOf="@+id/imgCollection"
+                    android:alpha="0.9"
+                    android:fontFamily="@font/sf_medium"
+                    android:text="Caption Collection"
+                    android:textColor="@color/colorSecondaryBlack"
+                    android:textSize="@dimen/_12sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_light_ripple"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="@dimen/_6sdp">
+
+                <ImageView
+                    android:id="@+id/imgRefresh"
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:alpha="0.8"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/ic_refresh" />
+
+                <TextView
+                    android:id="@+id/txtRefresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:layout_toRightOf="@+id/imgRefresh"
+                    android:alpha="0.9"
+                    android:fontFamily="@font/sf_medium"
+                    android:text="Refresh"
+                    android:textColor="@color/colorSecondaryBlack"
+                    android:textSize="@dimen/_12sdp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

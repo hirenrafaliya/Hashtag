@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.AdjustFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:id="@+id/layoutParentAdjust">
+
+        <TextView
+            android:id="@+id/txtSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_medium"
+            android:padding="@dimen/_8sdp"
+            android:text="Size"
+            android:textColor="@color/colorPrimaryBlack"
+            android:textSize="@dimen/_11sdp" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/seekTextSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtSize"
+            android:layout_toRightOf="@+id/txtSize"
+            android:padding="@dimen/_8sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Darkness"
+            android:textColor="@color/colorPrimaryBlack"
+            android:textSize="@dimen/_11sdp"
+            android:padding="@dimen/_8sdp"
+            android:fontFamily="@font/sf_medium"
+            android:layout_below="@+id/txtSize"
+            android:id="@+id/txtDarkness"
+            />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/seekBrightness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtDarkness"
+            android:layout_below="@+id/seekTextSize"
+            android:max="255"
+            android:padding="@dimen/_8sdp" />
+
+    </RelativeLayout>
+</RelativeLayout>

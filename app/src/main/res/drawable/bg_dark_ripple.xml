@@ -1,0 +1,18 @@
+<ripple
+    android:color="#519EFF"
+    tools:targetApi="lollipop"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <solid android:color="#ffffff" />
+            <corners android:radius= "@dimen/_4sdp"></corners>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="@dimen/_4sdp"/>
+            <gradient android:startColor="#0073FF" android:endColor="#015EDA"/>
+        </shape>
+    </item>
+</ripple>

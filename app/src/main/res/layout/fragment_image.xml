@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ImageFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/layoutParentImage"
+        android:background="#FFFFFF"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutTitle"
+            android:padding="@dimen/_4sdp"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:id="@+id/imgBack"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgBack"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:text="Select Background"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/colorPrimaryBlack"
+                android:fontFamily="@font/sf_medium"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_light_ripple"
+                android:paddingStart="@dimen/_6sdp"
+                android:paddingEnd="@dimen/_6sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_6sdp"
+                android:id="@+id/layoutSelect"
+                >
+                <ImageView
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:padding="@dimen/_1sdp"
+                    android:src="@drawable/ic_image"
+                    android:id="@+id/imgImage"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/imgImage"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:fontFamily="@font/sf_regular"
+                    android:textColor="@color/colorPrimaryBlack"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/layoutTitle"
+            android:background="@color/colorPrimaryWhite"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerView"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

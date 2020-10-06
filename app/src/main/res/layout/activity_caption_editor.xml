@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CaptionEditorActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:id="@+id/layoutActionBar"
+        android:background="@color/colorPrimaryWhite"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:padding="@dimen/_8sdp"
+            android:id="@+id/imgBack"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:fontFamily="@font/sf_medium"
+            android:layout_toRightOf="@+id/imgBack"
+            android:text="Caption Editor"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorPrimaryBlack"
+            android:id="@+id/txtAppName"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutParentEditingPanel"
+        android:layout_below="@+id/layoutActionBar"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_4sdp"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/_8sdp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/layoutImgParent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/imgBackgound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/bg_gradient_secondary" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignStart="@+id/imgBackgound"
+                    android:layout_alignTop="@+id/imgBackgound"
+                    android:layout_alignEnd="@+id/imgBackgound"
+                    android:layout_alignBottom="@+id/imgBackgound"
+                    android:layout_centerInParent="true"
+                    android:padding="@dimen/_4sdp"
+                    android:editable="false"
+                    android:background="#66000000"
+                    android:fontFamily="@font/sf_bold"
+                    android:text="Some Caption for your photo. Yes It may contain two lines."
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_18sdp"
+                    android:id="@+id/edtCaption"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/layoutActionBar"
+        android:layout_above="@+id/layoutParentEditingPanel"
+        android:id="@+id/layoutFragment"
+        />
+
+    <include layout="@layout/layout_editing_panel"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

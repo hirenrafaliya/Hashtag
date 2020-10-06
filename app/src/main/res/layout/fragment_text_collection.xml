@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.TextCollectionFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_weight="1"
+        android:id="@+id/layoutTextCollection"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_4sdp"
+            android:id="@+id/layoutTitle"
+            >
+
+        <ImageView
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:id="@+id/imgBack"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgBack"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:text="Select any caption"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorPrimaryBlack"
+            android:fontFamily="@font/sf_medium"
+            />
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_below="@+id/layoutTitle"
+            android:layout_above="@+id/progressLoad"
+            android:id="@+id/recyclerView"
+            />
+
+        <ProgressBar
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/_4sdp"
+            android:visibility="gone"
+            android:id="@+id/progressLoad"
+            />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/progressBar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBar"
+            android:text="Loading..."
+            android:textSize="@dimen/_13sdp"
+            android:textAlignment="center"
+            android:textColor="@color/colorSecondaryBlack"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/sf_medium"
+            android:id="@+id/txtStatus"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
